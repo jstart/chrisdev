@@ -5,16 +5,16 @@
 #### OS-X
 
 ```
-$ sudo xcodebuild -license
-$ xcode-select --install
+sudo xcodebuild -license
+xcode-select --install
 ```
 
 ## Installation
 
 ```
-$ git clone https://github.com/jstart/chrisdev.git ~/Development/dotfiles
-$ cd ~/Development/dotfiles
-$ make install
+git clone https://github.com/jstart/chrisdev.git ~/Development/dotfiles
+cd ~/Development/dotfiles
+make install
 ```
 
 ### Configuring iTerm2
