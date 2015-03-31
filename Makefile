@@ -58,19 +58,6 @@ nvm:
 	@echo 'Installing NVM'
 	curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
-.PHONY: linux
-linux:
-ifeq ($(shell uname),Linux)
-	@echo 'Configuring Ubuntu Software Packages'
-	sudo apt-get update
-	sudo apt-get upgrade -y
-	sudo apt-get install -y \
-	 fail2ban \
-	 mosh \
-	 tmux \
-	 weechat
-endif
-
 .PHONY: mac
 mac:
 ifeq ($(shell uname),Darwin)
