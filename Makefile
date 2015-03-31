@@ -1,5 +1,5 @@
 build: update
-install: git setup nvm linux mac mac-dock mac-apps
+install: git setup nvm mac mac-dock mac-apps
 
 GIT_USER_NAME := $(shell git config --get --global user.name)
 GIT_USER_EMAIL := $(shell git config --get --global user.email)
