@@ -9,16 +9,10 @@ $ sudo xcodebuild -license
 $ xcode-select --install
 ```
 
-### Ubuntu
-
-```
-$ sudo apt-get install -y build-essential git vim zsh
-```
-
 ## Installation
 
 ```
-$ git clone https://github.com/fitztrev/trevdev.git ~/trevdev
+$ git clone https://github.com/jstart/chrisdev.git ~/trevdev
 $ cd ~/trevdev
 $ make install
 ```
