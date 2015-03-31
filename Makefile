@@ -120,8 +120,6 @@ ifeq ($(shell uname),Darwin)
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
-	@echo 'Installing Fonts'
-	cp ~/trevdev/fonts/Monaco-for-Powerline.otf ~/Library/Fonts/Monaco-for-Powerline.otf
 endif
 
 .PHONY: mac-dock
@@ -134,12 +132,9 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Maps"
 	./dockutil/scripts/dockutil --remove "FaceTime"
 	./dockutil/scripts/dockutil --remove "Photo Booth"
-	./dockutil/scripts/dockutil --remove "iTunes"
 	./dockutil/scripts/dockutil --remove "iBooks"
 	./dockutil/scripts/dockutil --remove "App Store"
 	./dockutil/scripts/dockutil --remove "System Preferences"
-	./dockutil/scripts/dockutil --remove "Mail"
-	./dockutil/scripts/dockutil --remove "Calendar"
 	./dockutil/scripts/dockutil --remove "Messages"
 	./dockutil/scripts/dockutil --remove "iPhoto"
 	./dockutil/scripts/dockutil --remove "Pages"
