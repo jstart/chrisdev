@@ -1,7 +1,7 @@
 " Vundle
 set nocompatible
 filetype off
-set rtp+=~/trevdev/vim/bundle/vundle/
+set rtp+=~/Development/dotfiles/vim/bundle/vundle/
 call vundle#rc()
 "filetype plugin indent on
 filetype plugin on
@@ -74,7 +74,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Saved macros
-let @t = ':Tabularize /\(=>\|=\)' "For lining up => and =
+let @t = ':Tabularize /\(=>\|=\)
+' "For lining up => and =
 
 " Key mappings
 	let mapleader = ","
@@ -158,7 +159,7 @@ let @t = ':Tabularize /\(=>\|=\)' "For lining up => and =
 	let g:localvimrc_ask=0
 
 	" Ctrl P
-	set runtimepath^=~/trevdev/vim/bundle/ctrlp.vim
+	set runtimepath^=~/Development/dotfiles/vim/bundle/ctrlp.vim
 	let g:ctrlp_max_height = 20
 	let g:ctrlp_use_caching = 1
 	let g:ctrlp_clear_cache_on_exit = 0
@@ -168,7 +169,7 @@ let @t = ':Tabularize /\(=>\|=\)' "For lining up => and =
 	" Powerline
 	set laststatus=2
 	set encoding=utf-8
-	set rtp+=~/trevdev/vim/bundle/powerline/powerline/bindings/vim
+	set rtp+=~/Development/dotfiles/vim/bundle/powerline/powerline/bindings/vim
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
 
