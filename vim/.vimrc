@@ -12,8 +12,6 @@ filetype plugin on
 	Bundle 'editorconfig/editorconfig-vim'
 	Bundle 'godlygeek/tabular'
 	Bundle 'groenewege/vim-less'
-	Bundle 'jnwhiteh/vim-golang'
-	Bundle 'kchmck/vim-coffee-script'
 	Bundle 'kien/ctrlp.vim'
 	Bundle 'Lokaltog/powerline'
 	Bundle 'Lokaltog/vim-easymotion'
@@ -75,7 +73,7 @@ autocmd BufWinLeave * call clearmatches()
 
 " Saved macros
 let @t = ':Tabularize /\(=>\|=\)
-' "For lining up => and =
+"For lining up => and =
 
 " Key mappings
 	let mapleader = ","
