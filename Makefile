@@ -68,14 +68,12 @@ ifeq ($(shell uname),Darwin)
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install vim --override-system-vi
-	brew install php55 php55-mcrypt
 	brew install \
 		composer \
 		git \
 		mosh \
 		nvm \
 		optipng \
-		phpunit \
 		rbenv \
 		ruby-build \
 		tmux \
