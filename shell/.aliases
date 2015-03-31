@@ -1,5 +1,7 @@
 alias gs='git status'
 alias gd='git diff'
+alias gc='git checkout'
+alias gb='git branch'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -13,11 +15,6 @@ alias ..5="cd ../../../../.."
 
 alias -- -="cd -"
 
-alias artisan='php artisan'
-alias art='php artisan'
-
-alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
-
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
 alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlecode.iterm2" -sound Glass }; _'
 
@@ -26,9 +23,4 @@ alias chromedev='open -a Google\ Chrome --args --ignore-certificate-errors --all
 alias tmux="TERM=screen-256color-bce tmux"
 alias ts='_(){ if [ "$1" ]; then SESSION_NAME=$1 else SESSION_NAME=${${PWD##*/}:l} fi; tmux new-session -s $SESSION_NAME }; _'
 
-alias openscad='/opt/homebrew-cask/Caskroom/openscad/2014.03/OpenSCAD.app/Contents/MacOS/OpenSCAD'
-##alias composer='hhvm -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=30000 /usr/local/Cellar/composer/1.0.0-alpha8/libexec/composer.phar'
-
 alias pyserve='python -m SimpleHTTPServer $1'
-
-alias java='/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java'
