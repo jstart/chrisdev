@@ -92,7 +92,7 @@ ifeq ($(shell uname),Darwin)
 	# Totally disable the dashboard
 	defaults write com.apple.dashboard mcx-disabled -boolean TRUE
 	# Always open everything in Finder's list view. This is important.
-	defaults write com.apple.Finder FXPreferredViewStyle clmv
+	defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 	# Show the ~/Library folder.
 	chflags nohidden ~/Library
 	# Disable the warning when changing a file extension
