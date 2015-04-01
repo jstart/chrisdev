@@ -36,7 +36,7 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew composer git laravel npm tmux vagrant)
+plugins=(brew composer git npm tmux)
 
 DISABLE_AUTO_UPDATE="true"
 
@@ -44,15 +44,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-source $HOME/trevdev/shell/.aliases
-source $HOME/trevdev/shell/.vars
+source $HOME/Development/dotfiles/shell/.aliases
+source $HOME/Development/dotfiles/shell/.vars
 [[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
 ## Update $PATH for Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-## Update $PATH for Google App Engine
-export PATH=~/dev/go_appengine:$PATH
 
 ## NVM (Node Version Manager)
 # [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
