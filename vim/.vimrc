@@ -72,7 +72,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Saved macros
-let @t = ':Tabularize /\(=>\|=\)
+let @t = ':Tabularize /\(=>\|=\)'
 "For lining up => and =
 
 " Key mappings
