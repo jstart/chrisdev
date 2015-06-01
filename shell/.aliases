@@ -2,6 +2,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git checkout'
 alias gb='git branch'
+alias gp='git pull'
 
 alias ..='cd ..'
 alias ...='cd ../..'

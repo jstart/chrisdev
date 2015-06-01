@@ -15,7 +15,7 @@ update:
 	@echo 'Updating Gems'
 	@gem update || true
 	@echo 'Updating Homebrew'
-	@type brew >/dev/null 2>&1 && brew update && brew upgrade || true
+	@type brew >/dev/null 2>&1 && brew update && brew upgrade --all || true
 
 .PHONY: git
 git:
