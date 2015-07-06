@@ -44,8 +44,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-source $HOME/Development/dotfiles/shell/.aliases
-source $HOME/Development/dotfiles/shell/.vars
+source $HOME/Developer/dotfiles/shell/.aliases
+source $HOME/Developer/dotfiles/shell/.vars
 [[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
 ## Update $PATH for Homebrew

@@ -1,34 +1,36 @@
 " Vundle
 set nocompatible
 filetype off
-set rtp+=~/Development/dotfiles/vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
 "filetype plugin indent on
 filetype plugin on
 
-	" My Bundles
-	Bundle 'airblade/vim-gitgutter'
-	Bundle 'digitaltoad/vim-jade'
-	Bundle 'editorconfig/editorconfig-vim'
-	Bundle 'godlygeek/tabular'
-	Bundle 'groenewege/vim-less'
-	Bundle 'kien/ctrlp.vim'
-	Bundle 'Lokaltog/powerline'
-	Bundle 'Lokaltog/vim-easymotion'
-	Bundle 'mattn/emmet-vim'
-	Bundle 'nvie/vim-rst-tables'
-	Bundle 'scrooloose/nerdtree'
-	Bundle 'scrooloose/syntastic'
-	Bundle 'tomtom/tcomment_vim'
-	Bundle 'tpope/vim-fugitive'
-	Bundle 'vim-scripts/applescript.vim'
-	Bundle 'vim-scripts/localvimrc'
-	Bundle 'xsbeats/vim-blade'
-	"Bundle 'altercation/vim-colors-solarized'
-	"Bundle 'flazz/vim-colorschemes'
-	"Bundle 'nathanaelkane/vim-indent-guides'
+	" My Plugins
+	Plugin 'airblade/vim-gitgutter'
+	Plugin 'digitaltoad/vim-jade'
+	Plugin 'editorconfig/editorconfig-vim'
+	Plugin 'godlygeek/tabular'
+	Plugin 'groenewege/vim-less'
+	Plugin 'jnwhiteh/vim-golang'
+	Plugin 'kchmck/vim-coffee-script'
+	Plugin 'kien/ctrlp.vim'
+	Plugin 'Lokaltog/powerline'
+	Plugin 'Lokaltog/vim-easymotion'
+	Plugin 'mattn/emmet-vim'
+	Plugin 'nvie/vim-rst-tables'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'scrooloose/syntastic'
+	Plugin 'tomtom/tcomment_vim'
+	Plugin 'tpope/vim-fugitive'
+	Plugin 'vim-scripts/applescript.vim'
+	Plugin 'vim-scripts/localvimrc'
+	Plugin 'xsbeats/vim-blade'
+	"Plugin 'altercation/vim-colors-solarized'
+	"Plugin 'flazz/vim-colorschemes'
+	"Plugin 'nathanaelkane/vim-indent-guides'
 
-	Bundle 'taglist.vim'
+	Plugin 'taglist.vim'
 
 " General Settings
 syntax on
@@ -70,10 +72,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" Saved macros
-let @t = ':Tabularize /\(=>\|=\)'
-"For lining up => and =
 
 " Key mappings
 	let mapleader = ","
@@ -157,7 +155,7 @@ let @t = ':Tabularize /\(=>\|=\)'
 	let g:localvimrc_ask=0
 
 	" Ctrl P
-	set runtimepath^=~/Development/dotfiles/vim/bundle/ctrlp.vim
+	set runtimepath^=~/Developer/dotfiles/vim/bundle/ctrlp.vim
 	let g:ctrlp_max_height = 20
 	let g:ctrlp_use_caching = 1
 	let g:ctrlp_clear_cache_on_exit = 0
@@ -167,12 +165,13 @@ let @t = ':Tabularize /\(=>\|=\)'
 	" Powerline
 	set laststatus=2
 	set encoding=utf-8
-	set rtp+=~/Development/dotfiles/vim/bundle/powerline/powerline/bindings/vim
+	set rtp+=~/Developer/dotfiles/vim/bundle/powerline/powerline/bindings/vim
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
 
 	" Git Gutter
 	highlight clear SignColumn
+	let g:gitgutter_max_signs = 99999
 
 	" Syntastic
 	" disable for angular
