@@ -106,6 +106,7 @@ ifeq ($(shell uname),Darwin)
 	# Disable the “Are you sure you want to open this application?” dialog
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
 	defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+	defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 endif
 
 .PHONY: mac-dock
