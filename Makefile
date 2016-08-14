@@ -138,6 +138,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install slate
 	brew cask install spotifree
 	brew cask install spotify
+	brew cask install flux
 endif
 
 .PHONY: ssh-key
