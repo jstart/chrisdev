@@ -140,6 +140,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install spotify
 	brew cask install flux
 	brew cask install transmission
+	brew cask install vlc
 endif
 
 .PHONY: ssh-key
