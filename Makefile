@@ -141,6 +141,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install flux
 	brew cask install transmission
 	brew cask install vlc
+	brew cask install qlmarkdown
 endif
 
 .PHONY: ssh-key
