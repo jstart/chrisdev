@@ -83,6 +83,8 @@ ifeq ($(shell uname),Darwin)
 		zsh-syntax-highlighting
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
+	# Text Replacement in all apps
+	defaults write -g WebAutomaticTextReplacementEnabled -bool true
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 	# Save to disk (not to iCloud) by default
@@ -142,6 +144,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install transmission
 	brew cask install vlc
 	brew cask install qlmarkdown
+	brew cask install qlstephen
 endif
 
 .PHONY: ssh-key
