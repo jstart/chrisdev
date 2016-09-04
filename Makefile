@@ -109,6 +109,9 @@ ifeq ($(shell uname),Darwin)
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
 	defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 	defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+
+	launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+
 endif
 
 .PHONY: mac-dock
