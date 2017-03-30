@@ -3,6 +3,9 @@ alias gd='git diff'
 alias gc='git checkout'
 alias gb='git branch'
 alias gp='git pull'
+alias ga='git add .'
+alias gca='git commit -a'
+alias GP='git push'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -17,11 +20,6 @@ alias ..5="cd ../../../../.."
 alias -- -="cd -"
 
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
-alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlecode.iterm2" -sound Glass }; _'
-
-alias chromedev='open -a Google\ Chrome --args --ignore-certificate-errors --allow-running-insecure-content'
 
 alias tmux="TERM=screen-256color-bce tmux"
 alias ts='_(){ if [ "$1" ]; then SESSION_NAME=$1 else SESSION_NAME=${${PWD##*/}:l} fi; tmux new-session -s $SESSION_NAME }; _'
-
-alias pyserve='python -m SimpleHTTPServer $1'
