@@ -12,8 +12,8 @@ xcode-select --install
 ## Installation
 
 ```
-git clone https://github.com/jstart/chrisdev.git ~/Development/dotfiles
-cd ~/Development/dotfiles
+git clone https://github.com/jstart/chrisdev.git ~/Developer/dotfiles
+cd ~/Developer/dotfiles
 make install
 ```
 

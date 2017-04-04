@@ -6,6 +6,7 @@ alias gp='git pull'
 alias ga='git add .'
 alias gca='git commit -a'
 alias GP='git push'
+alias all='git pull --recurse-submodules && git submodule update --init --recursive'
 
 alias ..='cd ..'
 alias ...='cd ../..'
