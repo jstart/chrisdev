@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+    source <(pmk completion --shell=zsh)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -36,7 +37,7 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew composer git npm tmux)
+plugins=(brew composer git npm)
 
 DISABLE_AUTO_UPDATE="true"
 
@@ -79,3 +80,9 @@ export PATH="/Users/tfitzgerald/android-sdk/sdk/tools:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

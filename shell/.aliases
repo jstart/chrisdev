@@ -1,11 +1,16 @@
 alias gs='git status'
 alias gd='git diff'
+alias GD='git branch -D'
+alias GPD='git push origin :'
+alias gpo='git pull origin'
 alias gc='git checkout'
 alias gb='git branch'
 alias gp='git pull'
 alias ga='git add .'
 alias gca='git commit -a'
 alias GP='git push'
+alias GC="git checkout -b"
+alias gitclean="git fetch --prune; git branch -r | awk '{print \$1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \$1}' | xargs git branch -D"
 alias all='git pull --recurse-submodules && git submodule update --init --recursive'
 
 alias ..='cd ..'
@@ -21,6 +26,8 @@ alias ..5="cd ../../../../.."
 alias -- -="cd -"
 
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
+
+alias wtl='webtorrent'
 
 alias tmux="TERM=screen-256color-bce tmux"
 alias ts='_(){ if [ "$1" ]; then SESSION_NAME=$1 else SESSION_NAME=${${PWD##*/}:l} fi; tmux new-session -s $SESSION_NAME }; _'
