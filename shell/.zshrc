@@ -76,8 +76,7 @@ type brew >/dev/null 2>&1 && [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Android SDK
-export PATH="/Users/tfitzgerald/android-sdk/sdk/tools:$PATH"
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home"
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
