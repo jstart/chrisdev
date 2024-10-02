@@ -20,10 +20,10 @@ fi
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -63,17 +63,11 @@ source $(brew --prefix nvm)/nvm.sh
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-## Travis gem
-[[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
-
 ## ZSH syntax highlighting
 [[ -s /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## Autojump
 type brew >/dev/null 2>&1 && [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Android SDK
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -81,7 +75,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/christophertruman/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
