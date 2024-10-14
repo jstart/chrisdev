@@ -1,6 +1,7 @@
 alias gs='git status'
 alias gd='git diff'
 alias GD='git branch -D'
+alias GR='git reset --hard'
 alias GPD='git push origin :'
 alias gpo='git pull origin'
 alias gc='git checkout'
